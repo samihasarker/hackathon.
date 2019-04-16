@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="academy.RemoveStudentController">
+   <children>
+      <AnchorPane fx:id="registrationNumberTextFieldHolder" layoutY="1.0" prefHeight="500.0" prefWidth="700.0" visible="false">
+         <children>
+            <TextField fx:id="registrationNumberTextField" layoutX="225.0" layoutY="228.0" prefHeight="46.0" prefWidth="245.0" promptText="enter reagistration number" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="infoHolder" prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="113.0" layoutY="112.0" prefHeight="46.0" prefWidth="104.0" text="Name                 :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="158.0" prefHeight="46.0" prefWidth="104.0" text="Roll                   :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="203.0" prefHeight="46.0" prefWidth="104.0" text="Class                 :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="251.0" prefHeight="46.0" prefWidth="134.0" text="Registration Number :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="220.0" layoutY="112.0" prefHeight="46.0" prefWidth="420.0" text="Label" />
+            <Label fx:id="roll" layoutX="218.0" layoutY="158.0" prefHeight="46.0" prefWidth="420.0" text="Label" />
+            <Label fx:id="cls" layoutX="218.0" layoutY="203.0" prefHeight="46.0" prefWidth="420.0" text="Label" />
+            <Label fx:id="registrationNumber" layoutX="217.0" layoutY="251.0" prefHeight="46.0" prefWidth="420.0" text="Label" />
+            <Button layoutX="320.0" layoutY="351.0" mnemonicParsing="false" onAction="#setRemove" text="Remove" />
+            <Label fx:id="error" layoutX="206.0" layoutY="404.0" prefHeight="46.0" prefWidth="320.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="640.0" layoutY="28.0" mnemonicParsing="false" onAction="#setBack" text="Back" />
+   </children>
+</AnchorPane>
